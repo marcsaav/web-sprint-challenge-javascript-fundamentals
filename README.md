@@ -6,7 +6,7 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the sprint challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL if you need direction. 
+You are not allowed to collaborate during the sprint challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL if you need direction.
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
 
@@ -26,16 +26,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+    ".forEach" does not return a new arrray, but instead goes through every item, no matter what, allows a callback function to mutate the array and does not require a return keyword to function.
+    ".map" returns a new array, allocates memory and stores return values, and requires the return keyword to function.
 2. Explain the difference between a callback and a higher order function.
-
+    A higher order function requires a callback function as a parameter, and uses the callback function to manipulate the other parameters given to it.
 3. What is closure?
-
+    Closure is the scope chain between an inner function and its outer function, and defines the ability of the inner function to call on variables located in the outer function.
 4. Describe the four rules of the 'this' keyword.
-
+    1. "this" if not defined or refernced to anything, will reference the window, or if in strict mode, be undefined.
+    2. "this" when used within an object method, references to the object it resides in.
+    3. "this" when used in call(), apply(), or bind() functions, referer to the object within the function's parameter.
+    4. "this" when used after a "new" keyword, refers to the object being newly created.
 5. Why do we need super() in an extended class?
+    super() allows us to carry over the parent class' attributes/methods, so that we don't have to copy them over again.
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -61,7 +66,7 @@ Test your knowledge of advanced array methods and callbacks.
 
 #### Task B: Closure
 
-This challenge takes a look at closures as well as scope. 
+This challenge takes a look at closures as well as scope.
 * [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
 
 #### Task C: Prototypes
@@ -76,7 +81,7 @@ Once you have completed the prototypes challenge, it's time to convert all your 
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-### Task 3: Stretch Goals 
+### Task 3: Stretch Goals
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
 
